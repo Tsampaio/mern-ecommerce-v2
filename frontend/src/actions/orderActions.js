@@ -13,7 +13,8 @@ export const createOrder = (order) => async (dispatch, getState) => {
     dispatch({
       type: ORDER_CREATE_REQUEST
     });
-
+    console.log("my order is");
+    console.log(order);
     const { userLogin: { userInfo } } = getState();
 
     const config = {
